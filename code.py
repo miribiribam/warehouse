@@ -15,7 +15,7 @@ if not image_meta_tag:
     file_name = f"{datetime.now():%Y-%m-%d_%H:%M:%S}.jpg"
     with open(file_name, "wb") as out_file:
         out_file.write(image_data)
-    return f"Image downloaded and saved in the file {file_name}"
+    return f"Image downloaded and saved in the file {file_name}"#hello
 
 def download_video(url: str) -> bytes:
     base_url = "https://downloadgram.net/wp-json/wppress/video-downloader/video?url="
