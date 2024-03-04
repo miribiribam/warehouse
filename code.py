@@ -3,7 +3,7 @@ if not image_meta_tag:
 
     image_url = image_meta_tag.get("content")
     if not image_url:
-        return f"Image URL not found in meta tag {image_meta_tag}."
+        return f"Image URL not found in meta tag {image_meta_tag}."#nice
 
     try:
         image_data = requests.get(image_url).content
